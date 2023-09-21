@@ -1,11 +1,14 @@
 {
-  "About us": "",
+  "About us": "About us",
   "Language": "Русский",
   "Main page": "Main page",
   "Page not found": "Page not found",
+  "Refresh page": "Refresh page",
+  "Short language": "Ru",
   "Test example": "Test example",
   "Translate": "Translate",
+  "Unexpected error": "Unexpected error",
   "throw error": "throw error",
-  "Обновить страницу": "Обновить страницу",
-  "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка"
+  "Главная": "",
+  "О сайте": ""
 }
