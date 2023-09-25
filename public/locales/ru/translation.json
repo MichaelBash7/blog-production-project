@@ -1,14 +1,21 @@
 {
   "About us": "О сайте",
   "Language": "English",
+  "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
+    " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
+      "": ""
+    }
+  },
   "Main page": "Главная страница",
   "Page not found": "Страница не найдена",
   "Refresh page": "Обновить страницу",
   "Short language": "En",
+  "Sign in": "Войти",
   "Test example": "Тестовый пример",
   "Translate": "Перевод",
   "Unexpected error": "Произошла непредвиденная ошибка",
   "throw error": "throw error",
+  "Войти": "",
   "Главная": "",
   "О сайте": ""
 }
