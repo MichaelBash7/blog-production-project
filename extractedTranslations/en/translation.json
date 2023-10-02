@@ -3,6 +3,7 @@
   "Enter password": "",
   "Enter username": "",
   "Language": "",
+  "Login or password is incor": "",
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
     " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
       "": ""
@@ -11,16 +12,21 @@
   "Main page": "",
   "Page not found": "",
   "Refresh page": "",
+  "Sign In": "",
   "Sign in": "",
+  "Sign out": "",
   "Unexpected error": "",
+  "Wrong login or password": "",
   "decrement": "",
   "increment": "",
   "toggle": "",
   "Введите username": "",
   "Введите пароль": "",
   "Войти": "",
+  "Вы ввели неверный логин или пароль": "",
   "Главная": "",
   "О сайте": "",
   "Обновить страницу": "",
-  "Произошла непредвиденная ошибка": ""
+  "Произошла непредвиденная ошибка": "",
+  "Форма авторизации": ""
 }
