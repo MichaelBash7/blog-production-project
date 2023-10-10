@@ -4,8 +4,8 @@ import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
-import { userActions } from 'entities/User';
 import { useDispatch } from 'react-redux';
+import { userActions } from 'entities/User';
 
 const App = () => {
     const { theme } = useTheme();
@@ -16,7 +16,7 @@ const App = () => {
     }, [dispatch]);
 
     return (
-        <div className={classNames('app', {}, [])}>
+        <div className={classNames('app', {}, [theme])}>
             <Suspense fallback="">
                 <Navbar />
                 <div className="content-page">
