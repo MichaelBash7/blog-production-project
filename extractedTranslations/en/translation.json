@@ -12,5 +12,7 @@
   "Sign in": "Sign in",
   "Sign out": "Sign out",
   "Unexpected error": "Unexpected error",
-  "Wrong login or password": "Wrong login or password"
+  "Wrong login or password": "Wrong login or password",
+  "decrement": "",
+  "increment": ""
 }

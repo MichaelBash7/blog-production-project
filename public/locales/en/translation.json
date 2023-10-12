@@ -1,11 +1,15 @@
 {
   "About us": "About us",
+  "Edit": "Edit",
   "Enter password": "Enter password",
   "Enter username": "Enter username",
+  "First name": "First name",
   "Language": "Русский",
+  "Last name": "Last name",
   "Main page": "Main page",
   "Page not found": "Page not found",
-  "Profile Page": "",
+  "Profile": "Profile",
+  "Profile Page": "Profile Page",
   "Refresh page": "Refresh page",
   "Short language": "Ru",
   "Sign In": "Sign In",
@@ -17,8 +21,5 @@
   "Wrong login or password": "Wrong login or password",
   "decrement": "",
   "increment": "",
-  "throw error": "throw error",
-  "Войти": "",
-  "Главная": "",
-  "О сайте": ""
+  "throw error": "throw error"
 }
