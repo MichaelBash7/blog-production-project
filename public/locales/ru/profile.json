@@ -2,5 +2,13 @@
   "Edit": "Редактировать",
   "First name": "Ваше имя",
   "Last name": "Ваша фамилия",
-  "Profile": "Профиль"
+  "Profile": "Профиль",
+  "Enter username": "Введите имя",
+  "Photo link": "Ссылка на аватар",
+  "City": "Город",
+  "Age": "Возраст",
+  "First name and last name should be added": "Имя и фамилия обязательны",
+  "Incorrect age": "Некорректный возраст",
+  "No data": "Данные не указаны",
+  "Server error while saving": "Серверная ошибка при сохранении"
 }

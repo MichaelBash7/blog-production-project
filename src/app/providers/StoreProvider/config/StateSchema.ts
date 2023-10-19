@@ -16,6 +16,8 @@ import { NavigateOptions } from 'react-router';
 export interface StateSchema {
     counter: CounterSchema;
     user: UserSchema;
+
+    // Аsync reducers
     loginForm?: LoginSchema;
     profile?: ProfileSchema,
 }
@@ -41,4 +43,5 @@ export interface ThunkExtraArg {
 export interface ThunkConfig<T> {
     rejectValue: T;
     extra: ThunkExtraArg;
+    state: StateSchema;
 }
