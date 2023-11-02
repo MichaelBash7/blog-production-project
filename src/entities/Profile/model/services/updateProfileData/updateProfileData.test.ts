@@ -8,11 +8,12 @@ import { updateProfileData } from './updateProfileData';
 const data = {
     username: 'admin',
     age: 22,
-    country: Country.Russia,
-    lastname: 'Ivanov',
+    country: Country.Ukraine,
+    lastname: 'ulbi tv',
     first: 'asd',
     city: 'asf',
     currency: Currency.USD,
+    id: '1',
 };
 
 describe('updateProfileData.test', () => {
