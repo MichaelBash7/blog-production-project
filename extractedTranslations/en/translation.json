@@ -1,8 +1,16 @@
 {
+  "": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "About us": "About us",
   "Age": "Age",
   "Article loading error": "Article loading error",
   "Article not found": "Article not found",
+  "Back to list": "Back to list",
   "Cancel": "Cancel",
   "City": "City",
   "Comments": "Comments",
@@ -27,6 +35,13 @@
   "Please try to reload page": "Please try to reload page",
   "Profile": "Profile",
   "Profile Page": "Profile Page",
+  "Read more": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "Refresh page": "Refresh page",
   "Save": "Save",
   "Select country": "",
@@ -42,5 +57,12 @@
   "Wrong login or password": "Wrong login or password",
   "decrement": "",
   "increment": "",
-  "throw error": "throw error"
+  "throw error": "throw error",
+  "Читать далее": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  }
 }

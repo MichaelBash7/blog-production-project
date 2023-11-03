@@ -3,6 +3,7 @@
   "Age": "Age",
   "Article loading error": "Article loading error",
   "Article not found": "Article not found",
+  "Back to list": "Back to list",
   "Cancel": "Cancel",
   "City": "City",
   "Comments": "Comments",
@@ -27,6 +28,13 @@
   "Please try to reload page": "Please try to reload page",
   "Profile": "Profile",
   "Profile Page": "Страница профиля",
+  "Read more": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "Refresh page": "Обновить страницу",
   "Save": "Save",
   "Send": "Send",
