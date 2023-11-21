@@ -7,6 +7,9 @@
     }
   },
   "About us": "About us",
+  "Access denied": "",
+  "Admin": "",
+  "Admin panel": "Admin panel",
   "Age": "Age",
   "All": "",
   "Article loading error": "Article loading error",
@@ -88,6 +91,7 @@
   "Поиск": "",
   "Рекомендуем": "",
   "Сортировать ПО": "",
+  "У вас нет доступа к этой странице": "",
   "Читать далее": {
     "": {
       "": {
