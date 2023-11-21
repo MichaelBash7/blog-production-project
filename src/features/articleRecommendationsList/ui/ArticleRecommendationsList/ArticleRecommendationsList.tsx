@@ -21,7 +21,7 @@ export const ArticleRecommendationsList = memo((props: ArticleRecommendationsLis
         error,
     } = useArticleRecommendationsList(4);
 
-    if (isLoading || error) {
+    if (isLoading || error || !articles) {
         return null;
     }
 
