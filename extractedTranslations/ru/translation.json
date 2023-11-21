@@ -25,6 +25,7 @@
   "Incorrect country": "Incorrect country",
   "Language": "Язык",
   "Last name": "Last name",
+  "Loading article error": "Loading article error",
   "Login or password is incorrect": "Вы ввели неверный логин или пароль",
   "Main page": "Главная",
   "Mikhail`s App": "Mikhail`s App",
@@ -35,6 +36,7 @@
   "Please try to reload page": "Please try to reload page",
   "Profile": "Profile",
   "Profile Page": "Страница профиля",
+  "Profile not found": "Profile not found",
   "Read more": {
     "": {
       "": {

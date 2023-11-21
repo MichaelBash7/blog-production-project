@@ -33,6 +33,7 @@
   "Incorrect country": "",
   "Language": "Language",
   "Last name": "Last name",
+  "Loading article error": "",
   "Login or password is incorrect": "Login or password is incorrect",
   "Main page": "Main page",
   "Mikhail`s App": "Mikhail`s App",
@@ -43,6 +44,7 @@
   "Please try to reload page": "Please try to reload page",
   "Profile": "Profile",
   "Profile Page": "Profile Page",
+  "Profile not found": "Profile not found",
   "Read more": {
     "": {
       "": {
@@ -80,8 +82,11 @@
   "views": "",
   "Айти": "",
   "Все статьи": "",
+  "Комментарии": "",
   "Наука": "",
+  "Ошибка при загрузке статей": "",
   "Поиск": "",
+  "Рекомендуем": "",
   "Сортировать ПО": "",
   "Читать далее": {
     "": {
