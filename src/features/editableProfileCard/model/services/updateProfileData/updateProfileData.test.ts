@@ -1,7 +1,7 @@
 import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
 import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
-import { ValidateProfileError } from '../../types/editableProfileCardSchema';
+import { ValidateProfileError } from '../../consts/consts';
 import { updateProfileData } from './updateProfileData';
 
 const data = {
@@ -27,9 +27,12 @@ describe('updateProfileData.test', () => {
 
         const result = await thunk.callThunk();
 
-        expect(thunk.api.put).toHaveBeenCalled();
-        expect(result.meta.requestStatus).toBe('fulfilled');
-        expect(result.payload).toEqual(data);
+        expect(thunk.api.put)
+            .toHaveBeenCalled();
+        expect(result.meta.requestStatus)
+            .toBe('fulfilled');
+        expect(result.payload)
+            .toEqual(data);
     });
 
     test('error', async () => {
@@ -42,23 +45,30 @@ describe('updateProfileData.test', () => {
 
         const result = await thunk.callThunk();
 
-        expect(result.meta.requestStatus).toBe('rejected');
-        expect(result.payload).toEqual([
-            ValidateProfileError.SERVER_ERROR,
-        ]);
+        expect(result.meta.requestStatus)
+            .toBe('rejected');
+        expect(result.payload)
+            .toEqual([
+                ValidateProfileError.SERVER_ERROR,
+            ]);
     });
 
     test('validate error', async () => {
         const thunk = new TestAsyncThunk(updateProfileData, {
             profile: {
-                form: { ...data, lastname: '' },
+                form: {
+                    ...data,
+                    lastname: '',
+                },
             },
         });
         const result = await thunk.callThunk();
 
-        expect(result.meta.requestStatus).toBe('rejected');
-        expect(result.payload).toEqual([
-            ValidateProfileError.INCORRECT_USER_DATA,
-        ]);
+        expect(result.meta.requestStatus)
+            .toBe('rejected');
+        expect(result.payload)
+            .toEqual([
+                ValidateProfileError.INCORRECT_USER_DATA,
+            ]);
     });
 });
