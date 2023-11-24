@@ -635,6 +635,12 @@
       "userId": "2",
       "text": "123",
       "id": "I7S1sPO"
+    },
+    {
+      "articleId": "5",
+      "userId": "1",
+      "text": "I love GO!",
+      "id": "Wst84V5"
     }
   ],
   "users": [
