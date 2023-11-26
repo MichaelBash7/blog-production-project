@@ -74,6 +74,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'michaelb-plugin/path-checker': ['error', { alias: '@' }],
+        'michaelb-plugin/public-api-imports': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,
