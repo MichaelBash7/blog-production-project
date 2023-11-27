@@ -74,6 +74,13 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'michaelb-plugin/path-checker': ['error', { alias: '@' }],
+        'michaelb-plugin/fsd-layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'michaelb-plugin/public-api-imports': ['error',
             {
                 alias: '@',
