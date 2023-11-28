@@ -23,11 +23,13 @@ module.exports = {
         'i18next',
         'react-hooks',
         'michaelb-plugin',
+        'unused-imports',
     ],
     rules: {
         'linebreak-style': 0,
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
+        'unused-imports/no-unused-imports': 'error',
         indent: [2, 4],
         'react/jsx-filename-extension': [
             2,
