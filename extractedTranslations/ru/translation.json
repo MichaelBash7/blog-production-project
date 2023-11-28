@@ -10,6 +10,7 @@
   "Back to list": "Back to list",
   "Cancel": "Cancel",
   "City": "City",
+  "Close": "Close",
   "Comments": "Comments",
   "Country": "Country",
   "Create article": "Create article",
@@ -28,6 +29,7 @@
   "Incorrect country": "Incorrect country",
   "Language": "Язык",
   "Last name": "Last name",
+  "Leave your feedback on the article, this will help improve the quality": "Leave your feedback on the article, this will help improve the quality",
   "Loading article error": "Loading article error",
   "Login or password is incorrect": "Вы ввели неверный логин или пароль",
   "Main page": "Главная",
@@ -40,6 +42,7 @@
   "Profile": "Profile",
   "Profile Page": "Страница профиля",
   "Profile not found": "Profile not found",
+  "Rate the article": "Rate the article",
   "Read more": {
     "": {
       "": {
@@ -60,10 +63,12 @@
   "Sign in": "Войти",
   "Sign out": "Выйти",
   "Sort by": "Sort by",
+  "Thank you!": "Thank you!",
   "Unexpected error": "Произошла непредвиденная ошибка",
   "Upload profile error": "Upload profile error",
   "Username": "Username",
   "Wrong login or password": "Вы ввели неверный логин или пароль",
+  "Your feedback": "Your feedback",
   "asc": "asc",
   "ascending": "ascending",
   "by": "by",
