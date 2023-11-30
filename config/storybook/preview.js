@@ -1,4 +1,3 @@
-import { addDecorator } from '@storybook/react';
 import { StyleDecorator } from '../../src/shared/config/storybook/StyleDecorator/StyleDecorator';
 import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorator/RouterDecorator';
 import {
@@ -8,6 +7,7 @@ import { Theme } from '../../src/shared/const/theme';
 
 export const parameters = {
     actions: { argTypesRegex: '^on[A-Z].*' },
+
     controls: {
         matchers: {
             color: /(background|color)$/i,
@@ -37,7 +37,4 @@ export const parameters = {
     },
 };
 
-addDecorator(StyleDecorator);
-// addDecorator(ThemeDecorator(Theme.LIGHT));
-addDecorator(RouterDecorator);
-addDecorator(SuspenseDecorator);
+export const decorators = [StyleDecorator, RouterDecorator, SuspenseDecorator];
