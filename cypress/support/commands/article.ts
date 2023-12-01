@@ -7,19 +7,18 @@ const defaultArticle = {
     views: 1022,
     createdAt: '26.02.2022',
     userId: '1',
-    type: [
-        'SCIENCE',
-    ],
+    type: ['SCIENCE'],
     blocks: [],
 };
 
 export const createArticle = (article?: Article) => {
-    return cy.request({
-        method: 'POST',
-        url: 'http://localhost:8000/articles',
-        headers: { Authorization: 'asasf' },
-        body: article ?? defaultArticle,
-    })
+    return cy
+        .request({
+            method: 'POST',
+            url: 'http://localhost:8000/articles',
+            headers: { Authorization: 'asasf' },
+            body: article ?? defaultArticle,
+        })
         .then((resp) => resp.body);
 };
 

@@ -13,11 +13,7 @@ interface CommentListProps {
 }
 
 export const CommentList = memo((props: CommentListProps) => {
-    const {
-        className,
-        isLoading,
-        comments,
-    } = props;
+    const { className, isLoading, comments } = props;
     const { t } = useTranslation();
 
     if (isLoading) {
@@ -32,15 +28,17 @@ export const CommentList = memo((props: CommentListProps) => {
 
     return (
         <VStack gap="16" max className={classNames('', {}, [className])}>
-            {comments?.length
-                ? comments.map((comment) => (
+            {comments?.length ? (
+                comments.map((comment) => (
                     <CommentCard
                         isLoading={isLoading}
                         comment={comment}
                         key={comment.id}
                     />
                 ))
-                : <Text text={t('No comments found')} />}
+            ) : (
+                <Text text={t('No comments found')} />
+            )}
         </VStack>
     );
 });

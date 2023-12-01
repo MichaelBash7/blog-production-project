@@ -33,27 +33,27 @@ const options = [
     },
 ];
 
-export const CountrySelect = memo(({
-    className,
-    value,
-    onChange,
-    readonly,
-}: CountrySelectProps) => {
-    const { t } = useTranslation();
+export const CountrySelect = memo(
+    ({ className, value, onChange, readonly }: CountrySelectProps) => {
+        const { t } = useTranslation();
 
-    const onChangeHandler = useCallback((value: string) => {
-        onChange?.(value as Country);
-    }, [onChange]);
+        const onChangeHandler = useCallback(
+            (value: string) => {
+                onChange?.(value as Country);
+            },
+            [onChange],
+        );
 
-    return (
-        <ListBox
-            onChange={onChangeHandler}
-            value={value}
-            defaultValue={t('Country')}
-            label={t('Country')}
-            items={options}
-            readonly={readonly}
-            direction="top right"
-        />
-    );
-});
+        return (
+            <ListBox
+                onChange={onChangeHandler}
+                value={value}
+                defaultValue={t('Country')}
+                label={t('Country')}
+                items={options}
+                readonly={readonly}
+                direction="top right"
+            />
+        );
+    },
+);

@@ -22,20 +22,19 @@ interface DropdownMenuProps {
 }
 
 export function DropdownMenu(props: DropdownMenuProps) {
-    const {
-        className,
-        trigger,
-        items,
-        direction = 'bottom right',
-    } = props;
+    const { className, trigger, items, direction = 'bottom right' } = props;
 
     const menuClasses = [mapDirectionClass[direction]];
 
     return (
-        <Menu as="div" className={classNames(cls.DropdownMenu, {}, [className, popupCls.popup])}>
-            <Menu.Button className={popupCls.trigger}>
-                {trigger}
-            </Menu.Button>
+        <Menu
+            as="div"
+            className={classNames(cls.DropdownMenu, {}, [
+                className,
+                popupCls.popup,
+            ])}
+        >
+            <Menu.Button className={popupCls.trigger}>{trigger}</Menu.Button>
             <Menu.Items className={classNames(cls.menu, {}, menuClasses)}>
                 {items.map((item, index) => {
                     const content = ({ active }: { active: boolean }) => (
@@ -43,7 +42,9 @@ export function DropdownMenu(props: DropdownMenuProps) {
                             type="button"
                             disabled={item.disabled}
                             onClick={item.onClick}
-                            className={classNames(cls.item, { [popupCls.active]: active })}
+                            className={classNames(cls.item, {
+                                [popupCls.active]: active,
+                            })}
                         >
                             {item.content}
                         </button>
@@ -72,7 +73,6 @@ export function DropdownMenu(props: DropdownMenuProps) {
                         </Menu.Item>
                     );
                 })}
-
             </Menu.Items>
         </Menu>
     );

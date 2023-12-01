@@ -19,14 +19,14 @@ export default ({ config }: { config: webpack.Configuration }) => {
         '@': paths.src,
     };
     const rules = config.module!.rules as RuleSetRule[];
-    config.module!.rules = rules.map((rule) => (
+    config.module!.rules = rules.map((rule) =>
         /svg/.test(rule.test as string)
             ? {
-                ...rule,
-                exclude: /\.svg$/i,
-            }
-            : rule
-    ));
+                  ...rule,
+                  exclude: /\.svg$/i,
+              }
+            : rule,
+    );
 
     config!.module!.rules.push({
         test: /\.svg$/,
@@ -34,11 +34,13 @@ export default ({ config }: { config: webpack.Configuration }) => {
     });
     config!.module!.rules.push(buildCssLoader(true));
 
-    config!.plugins!.push(new DefinePlugin({
-        __IS_DEV__: JSON.stringify(true),
-        __API__: JSON.stringify('https://testapi.ru'),
-        __PROJECT__: JSON.stringify('storybook'),
-    }));
+    config!.plugins!.push(
+        new DefinePlugin({
+            __IS_DEV__: JSON.stringify(true),
+            __API__: JSON.stringify('https://testapi.ru'),
+            __PROJECT__: JSON.stringify('storybook'),
+        }),
+    );
 
     return config;
 };

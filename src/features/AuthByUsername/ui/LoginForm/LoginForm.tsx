@@ -21,17 +21,13 @@ import cls from './LoginForm.module.scss';
 export interface LoginFormProps {
     className?: string;
     onSuccess: () => void;
-
 }
 
 const initialReducers: ReducersList = {
     loginForm: loginReducer,
 };
 
-const LoginForm = memo(({
-    className,
-    onSuccess,
-}: LoginFormProps) => {
+const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
     const { t } = useTranslation();
     const dispatch = useAppDispatch();
     const username = useSelector(getLoginUsername);
@@ -39,33 +35,42 @@ const LoginForm = memo(({
     const isLoading = useSelector(getLoginIsLoading);
     const error = useSelector(getLoginError);
 
-    const onChangeUsername = useCallback((value: string) => {
-        dispatch(loginActions.setUsername(value));
-    }, [dispatch]);
+    const onChangeUsername = useCallback(
+        (value: string) => {
+            dispatch(loginActions.setUsername(value));
+        },
+        [dispatch],
+    );
 
-    const onChangePassword = useCallback((value: string) => {
-        dispatch(loginActions.setPassword(value));
-    }, [dispatch]);
+    const onChangePassword = useCallback(
+        (value: string) => {
+            dispatch(loginActions.setPassword(value));
+        },
+        [dispatch],
+    );
 
     const onLoginClick = useCallback(async () => {
-        const result = await dispatch(loginByUsername({
-            username,
-            password,
-        }));
+        const result = await dispatch(
+            loginByUsername({
+                username,
+                password,
+            }),
+        );
         if (result.meta.requestStatus === 'fulfilled') {
             onSuccess();
         }
     }, [onSuccess, dispatch, password, username]);
 
     return (
-        <DynamicModuleLoader
-            removeAfterUnmount
-            reducers={initialReducers}
-        >
+        <DynamicModuleLoader removeAfterUnmount reducers={initialReducers}>
             <div className={classNames(cls.LoginForm, {}, [className])}>
                 <Text title={t('Sign In')} />
-                {error
-                    && <Text text={t('Wrong login or password')} theme={TextTheme.ERROR} />}
+                {error && (
+                    <Text
+                        text={t('Wrong login or password')}
+                        theme={TextTheme.ERROR}
+                    />
+                )}
                 <Input
                     autofocus
                     type="text"
