@@ -655,7 +655,10 @@
         "isArticleRatingEnabled": true,
         "isCounterEnabled": true
       },
-      "avatar": "https://gameguru.ru/media/comment_images/2022/10/26/image0_ep4w7vj.jpg"
+      "avatar": "https://gameguru.ru/media/comment_images/2022/10/26/image0_ep4w7vj.jpg",
+      "jsonSettings": {
+        "theme": "app_light_theme"
+      }
     },
     {
       "id": "2",
