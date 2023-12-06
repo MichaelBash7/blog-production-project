@@ -48,10 +48,6 @@ export interface FlexProps extends DivProps {
     tag?: keyof HTMLElementTagNameMap;
 }
 
-/**
- * Устарел, используем новые компоненты из папки redesigned
- * @deprecated
- */
 export const Flex = (props: FlexProps) => {
     const {
         className,
