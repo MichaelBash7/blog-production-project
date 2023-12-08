@@ -641,6 +641,12 @@
       "userId": "1",
       "text": "I love GO!",
       "id": "Wst84V5"
+    },
+    {
+      "articleId": "7",
+      "userId": "1",
+      "text": "Best",
+      "id": "JsF1Hh3"
     }
   ],
   "users": [
@@ -658,7 +664,7 @@
       },
       "avatar": "https://gameguru.ru/media/comment_images/2022/10/26/image0_ep4w7vj.jpg",
       "jsonSettings": {
-        "theme": "app_dark_theme",
+        "theme": "app_light_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true
