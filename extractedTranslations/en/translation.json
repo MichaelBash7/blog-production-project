@@ -12,6 +12,7 @@
   "Admin panel": "Admin panel",
   "Age": "Age",
   "All": "",
+  "An error occurred while loading the article": "",
   "Article loading error": "Article loading error",
   "Article not found": "Article not found",
   "Articles not found": "",
@@ -113,6 +114,9 @@
   "Поиск": "",
   "Попробуйте обновить страницу": "",
   "Произошла ошибка при загрузке профиля": "",
+  "Произошла ошибка при загрузке статьи": {
+    "": ""
+  },
   "Профиль": "",
   "Редактировать": "",
   "Рекомендуем": "",
