@@ -45,6 +45,8 @@ export function ListBox<T extends string>(props: ListBoxProps<T>) {
         return items?.find((item) => item.value === value);
     }, [items, value]);
 
+    // @ts-ignore
+    // @ts-ignore
     return (
         <HStack gap="4">
             {label && <span>{`${label}>`}</span>}
@@ -58,14 +60,12 @@ export function ListBox<T extends string>(props: ListBoxProps<T>) {
                 value={value}
                 onChange={onChange}
             >
-                <HListBox.Button className={cls.trigger}>
-                    <Button
-                        variant="filled"
-                        disabled={readonly}
-                        addonRight={<Icon Svg={ArrowIcon} />}
-                    >
-                        {selectedItem?.content ?? defaultValue}
-                    </Button>
+                <HListBox.Button
+                    as={Button}
+                    variant="filled"
+                    addonRight={<Icon Svg={ArrowIcon} />}
+                >
+                    {selectedItem?.content ?? defaultValue}
                 </HListBox.Button>
                 <HListBox.Options
                     className={classNames(cls.options, {}, optionsClasses)}

@@ -664,7 +664,7 @@
       },
       "avatar": "https://gameguru.ru/media/comment_images/2022/10/26/image0_ep4w7vj.jpg",
       "jsonSettings": {
-        "theme": "app_orange_theme",
+        "theme": "app_dark_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true
@@ -798,6 +798,13 @@
       "rate": 4,
       "feedback": "Amazing!",
       "id": "pKzekil"
+    },
+    {
+      "userId": "1",
+      "articleId": "18",
+      "rate": 3,
+      "feedback": "Not bad",
+      "id": "BfByIni"
     }
   ]
 }
