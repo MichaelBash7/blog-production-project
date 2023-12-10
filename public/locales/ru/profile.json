@@ -6,6 +6,8 @@
   "Enter username": "",
   "Photo link": "Ссылка на аватар",
   "City": "Город",
+  "Cancel": "Отмена",
+  "Save": "Сохранить",
   "Age": "Возраст",
   "First name and last name should be added": "Имя и фамилия обязательны",
   "Incorrect age": "Некорректный возраст",

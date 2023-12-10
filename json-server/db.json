@@ -647,6 +647,12 @@
       "userId": "1",
       "text": "Best",
       "id": "JsF1Hh3"
+    },
+    {
+      "articleId": "2",
+      "userId": "1",
+      "text": "Кайф!",
+      "id": "uvBmx_i"
     }
   ],
   "users": [
@@ -664,7 +670,7 @@
       },
       "avatar": "https://gameguru.ru/media/comment_images/2022/10/26/image0_ep4w7vj.jpg",
       "jsonSettings": {
-        "theme": "app_dark_theme",
+        "theme": "app_orange_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true
@@ -720,10 +726,10 @@
       "first": "Admin",
       "lastname": "Admin",
       "age": 45,
-      "currency": "RUB",
-      "country": "Russia",
+      "currency": "EUR",
+      "country": "Israel",
       "city": "Moscow",
-      "username": "admin213546",
+      "username": "admin2135",
       "avatar": "https://gameguru.ru/media/comment_images/2022/10/26/image0_ep4w7vj.jpg"
     },
     {

@@ -5,7 +5,14 @@ import { Page } from '@/widgets/Page';
 const MainPage = () => {
     const { t } = useTranslation();
 
-    return <Page data-testid="MainPage">{t('Main page')}</Page>;
+    return (
+        <Page data-testid="MainPage">
+            {t(
+                'Welcome to our blog! ' +
+                    'Please Sign in and visit Articles page to explore our App and read articles on various topics',
+            )}
+        </Page>
+    );
 };
 
 export default MainPage;
